@@ -1,0 +1,53 @@
+.foot1{
+    
+    color: white;
+    background-color: #323232;
+    width: 100%;
+
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    
+}
+.foot2 h3 {
+    color: tomato;
+    font-weight: 500;
+   
+    
+   
+   
+}
+.foot2 h2 {
+    color: tomato;
+    font-weight: 500;
+   
+    
+   
+   
+}
+.foot6{
+    margin-top: 10px;
+}
+.img {
+cursor: pointer;
+
+
+}
+
+.ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+.ul a {
+    text-decoration: none;
+    color: white;
+    scrollbar-gutter: 1px;
+}
+.ul a:hover{
+color:white;
+
+}
+*{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,78 @@
+ .img1{
+    
+   border-radius: 15px 15px 0px 0px ;
+ } 
+ .m3{
+    background-color: whitesmoke ;
+ }
+ .p2{
+     font-size: 12px;
+     font-weight: 500px ;
+ }
+.img2{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.p1{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.food2 h4{
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.food2{
+    position: relative;
+}
+.img3{
+    width: 35px;
+    position: absolute;
+ top: 53%;
+    right: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.add{
+    position: absolute;
+    top: 53%;
+       right: 12px;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       padding: 6px;
+       border-radius: 50px;
+       background-color: white;
+       transition: 0.2s;
+    
+}
+.food2{
+    position: relative;
+}
+.img3{
+    width: 35px;
+    position: absolute;
+ top: 53%;
+    right: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.add{
+    position: absolute;
+    top: 53%;
+       right: 12px;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       padding: 6px;
+       border-radius: 50px;
+       background-color: white;
+       transition: 0.2s;
+    
+}
