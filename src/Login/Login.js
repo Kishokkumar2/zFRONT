@@ -20,7 +20,7 @@ const Login = ({ setLogin }) => {
         if (password.length < 8) {
             toast.error("Password must be at least 8 characters long");
         } else {
-            axios.post("http://localhost:5000/register", { name, email, password })
+            axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, { name, email, password })
                 .then(res => {
                     if (res.data === "exist") {
                         toast.error("User already exists");
@@ -39,7 +39,7 @@ const Login = ({ setLogin }) => {
         e.preventDefault();
 
         try {
-            await axios.post("http://localhost:5000/Login", { email, password })
+            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/Login`, { email, password })
                 .then(res => {
                     if (res.data.success) {
                         toast.success("Login successful");

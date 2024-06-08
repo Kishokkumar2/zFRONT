@@ -15,7 +15,7 @@ const StoreContextProvider = (props) => {
       setCarttitem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     }
     if (token) {
-      axios.post("http://localhost:5000/add", { itemId, userId: token }, { headers: { token } })
+      axios.post(`${process.env.REACT_APP_BACKEND_URL}/add`, { itemId, userId: token }, { headers: { token } })
         .catch(error => console.error('Error adding to cart:', error));
     }
   };
@@ -28,7 +28,7 @@ const StoreContextProvider = (props) => {
       setCarttitem(rest);
     }
     if (token) {
-      axios.post("http://localhost:5000/remove", { itemId, userId: token }, { headers: { token } })
+      axios.post(`${process.env.REACT_APP_BACKEND_URL}/remove`, { itemId, userId: token }, { headers: { token } })
         .catch(error => console.error('Error removing from cart:', error));
     }
   };
@@ -46,7 +46,7 @@ const StoreContextProvider = (props) => {
     return Total;
   };
 
-  const url = "http://localhost:5000";
+  const url = `${process.env.REACT_APP_BACKEND_URL}`;
   const contextvalue = {
     food_list,
     cartitem, setCarttitem, addtocart, remove, getTotal, token, setToken, url
@@ -54,7 +54,7 @@ const StoreContextProvider = (props) => {
 
   const fetchfoodlist = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/list");
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/list`);
       setFoodlist(res.data.data);
     } catch (error) {
       console.error('Error fetching food list:', error);
@@ -63,7 +63,7 @@ const StoreContextProvider = (props) => {
 
   const loadcartdata = async (token) => {
     try {
-      const res = await axios.post("http://localhost:5000/get", { userId: token }, { headers: { token } });
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/get`, { userId: token }, { headers: { token } });
       setCarttitem(res.data.cartdata);
     } catch (error) {
       console.error('Error loading cart data:', error);

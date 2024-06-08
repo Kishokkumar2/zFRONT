@@ -21,7 +21,7 @@ const Navbar = ({setLogin}) => {
       
       <nav className="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
         <div className="container">
-          <a className="navbar-brand " href="/"><i class="fa-solid fa-bowl-food"></i> <strong>ZWIGGY aaaaa</strong></a>
+          <a className="navbar-brand " href="/"><i class="fa-solid fa-bowl-food"></i> <strong>ZWIGGY</strong></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
