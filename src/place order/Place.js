@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState,  useContext } from 'react';
 import './Place.css';
 import { StoreContext } from '../Menu/CONTEXT/StoreContext';
 import axios from 'axios'

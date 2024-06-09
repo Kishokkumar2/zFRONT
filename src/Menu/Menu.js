@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Menu.css';
 import { menu_list } from '../assets/assets';
 import AOS from 'aos';

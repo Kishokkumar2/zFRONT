@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaCartArrowDown } from "react-icons/fa";
+
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from './Menu/CONTEXT/StoreContext';

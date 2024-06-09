@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState,  useContext } from 'react';
 import './Login.css';
 import axios from 'axios';
 import { assets } from '../assets/assets';
-import { useNavigate } from 'react-router-dom';
+
 import { toast } from 'react-toastify';
 import { StoreContext } from '../Menu/CONTEXT/StoreContext';
 
 const Login = ({ setLogin }) => {
     const {  setToken } = useContext(StoreContext);
-    const navigate = useNavigate();
+    
     const [currState, setCurrState] = useState("Login");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");

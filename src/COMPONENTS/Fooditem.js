@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import './Fooditem.css'
 import { assets } from '../assets/assets'
 import AOS from 'aos';
